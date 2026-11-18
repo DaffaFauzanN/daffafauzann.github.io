@@ -1,0 +1,112 @@
+/* portofolio daffa - versi 2
+   (versi 1 kebagusan, kayak template, bikin ulang aja) */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+	--daffa_kertas: #f1ece1;
+	--daffa_tinta:#17140f;
+	--daffa_oren: #ff5a1f;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+
+body{
+  background-color:var(--daffa_kertas);
+  background-image:radial-gradient(#cfc6b0 1px, transparent 1px);
+  background-size:22px 22px;
+  color:var(--daffa_tinta);
+  font-family:'Space Mono', monospace;
+  font-size:15px;
+  line-height:1.7;
+}
+a{color:inherit}
+
+/* ===== bar atas ===== */
+#daffa_bar{display:flex;justify-content:space-between;align-items:center;padding:12px 28px;border-bottom:2px solid var(--daffa_tinta);background:var(--daffa_kertas);position:sticky;top:0;z-index:10}
+.daffa_logo{font-family:'Archivo Black',sans-serif;text-decoration:none;font-size:1.1rem}
+#daffa_menu a{margin-left:8px;padding:2px 6px;text-decoration:none}
+#daffa_menu a:hover{background:var(--daffa_oren);color:#fff}
+
+/* ===== hero ===== */
+#daffa_hero{
+	max-width:1050px;
+	margin:0 auto;
+	padding:70px 28px 50px;
+	display:grid;
+	grid-template-columns:1.3fr 1fr;
+	gap:30px;
+	align-items:center;
+}
+.daffa_tag{display:inline-block;background:var(--daffa_tinta);color:var(--daffa_kertas);padding:2px 10px;transform:rotate(-2deg);margin-bottom:14px}
+#daffa_hero h1{font-family:'Archivo Black',sans-serif;font-size:clamp(3rem,9vw,6.6rem);line-height:.95;text-transform:uppercase;letter-spacing:-2px}
+#daffa_hero h1 em{font-style:normal;color:transparent;-webkit-text-stroke:2px var(--daffa_tinta)}
+.daffa_kalimat{font-size:1.1rem;margin-top:22px}
+.daffa_kalimat b{border-bottom:3px solid var(--daffa_oren)}
+.daffa_jam{margin-top:6px;font-size:.8rem;opacity:.6}
+
+.daffa_hero_kanan{position:relative;justify-self:center}
+.daffa_pigura{
+  position:relative;
+  width:290px;height:360px;
+  border:3px solid var(--daffa_tinta);
+  background:#d9cfb8 url('foto/profil.jpg') center/cover;
+  box-shadow:10px 10px 0 var(--daffa_tinta);
+  transform:rotate(3deg);
+  display:flex;align-items:flex-end;justify-content:center;
+  padding-bottom:10px;font-size:.8rem;
+}
+.daffa_pigura::before{content:'';position:absolute;top:-12px;left:50%;width:90px;height:26px;background:rgba(255,90,31,.55);transform:translateX(-50%) rotate(-4deg)}
+.daffa_stiker{position:absolute;right:-26px;bottom:-26px;width:96px;height:96px;border-radius:50%;background:var(--daffa_oren);border:3px solid var(--daffa_tinta);display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:.8rem;line-height:1.2;transform:rotate(-14deg);cursor:pointer;color:#fff;user-select:none}
+.daffa_stiker:active{transform:rotate(10deg) scale(.95)}
+
+/* ===== bagian2 ===== */
+.daffa_bagian{max-width:1050px;margin:0 auto;padding:60px 28px}
+.daffa_bagian h2{font-family:'Archivo Black',sans-serif;font-size:2.2rem;text-transform:uppercase;margin-bottom:26px}
+.daffa_bagian h2 span{color:var(--daffa_oren);margin-right:10px}
+/* .daffa_garis{width:40px;height:4px;background:#000} dulu pake garis bawah judul, dihapus */
+
+#daffa_about_isi{display:grid;grid-template-columns:1.2fr 1fr;gap:44px;align-items:start}
+#daffa_about_isi p{margin-bottom:12px}
+.daffa_ktm{background:#fff;border:3px solid var(--daffa_tinta);box-shadow:8px 8px 0 var(--daffa_tinta);padding:18px 20px;transform:rotate(-2deg)}
+.daffa_ktm h3{font-size:.8rem;letter-spacing:2px;border-bottom:2px dashed var(--daffa_tinta);padding-bottom:6px;margin-bottom:10px}
+.daffa_ktm dt{font-size:.72rem;opacity:.55;text-transform:uppercase}
+.daffa_ktm dd{margin-bottom:8px;font-weight:700}
+
+/* skill */
+.daffa_kolom3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.daffa_kotak{border:2px solid var(--daffa_tinta);padding:16px 18px;background:#fffdf6}
+.daffa_kotak:nth-child(2){transform:translateY(14px)}
+.daffa_kotak h3{margin-bottom:10px;font-size:1rem;background:var(--daffa_oren);color:#fff;display:inline-block;padding:0 8px}
+.daffa_kotak ul{list-style:none}
+.daffa_kotak li{padding:2px 0}
+
+/* proyek */
+.daffa_daftarproj{list-style:none;border-top:2px solid var(--daffa_tinta)}
+.daffa_daftarproj li{border-bottom:2px solid var(--daffa_tinta)}
+.daffa_daftarproj a{display:grid;grid-template-columns:44px 1.4fr 1.2fr 60px;gap:12px;padding:16px 8px;text-decoration:none;align-items:center;transition:.15s}
+.daffa_daftarproj a:hover{background:var(--daffa_oren);color:#fff;padding-left:22px}
+.daffa_nama_proj{font-family:'Archivo Black',sans-serif;font-size:1.25rem}
+.daffa_daftarproj small{opacity:.75}
+
+/* kontak */
+#daffa_kontak{background:var(--daffa_tinta);color:var(--daffa_kertas)}
+#daffa_kontak h2 span{color:var(--daffa_oren)}
+.daffa_gede{font-family:'Archivo Black',sans-serif;font-size:clamp(1.2rem,4.2vw,2.7rem);word-break:break-all;display:block;margin:10px 0;color:var(--daffa_oren);text-decoration:none}
+.daffa_gede:hover{text-decoration:underline}
+.daffa_kecil a{margin-right:20px}
+
+footer{padding:16px;text-align:center;font-size:.75rem;border-top:2px solid var(--daffa_tinta);background:var(--daffa_kertas)}
+
+/* hp */
+@media (max-width:760px){
+  #daffa_hero,#daffa_about_isi{grid-template-columns:1fr}
+  .daffa_kolom3{grid-template-columns:1fr}
+  .daffa_kotak:nth-child(2){transform:none}
+  .daffa_daftarproj a{grid-template-columns:34px 1fr}
+  .daffa_daftarproj a small{grid-column:2}
+  #daffa_menu a{margin-left:0;padding:2px 4px;font-size:.78rem}
+  #daffa_bar{padding:10px 14px}
+  .daffa_pigura{width:240px;height:300px}
+  .daffa_stiker{right:-14px}
+}
