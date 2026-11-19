@@ -3,140 +3,158 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daffa Fauzan Nugraha | Portofolio</title>
+<title>Daffa Fauzan Nugraha | Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- bar atas -->
-<div id="daffa_bar">
-	<a href="#daffa_hero" class="daffa_logo">daffa.fn</a>
-	<div id="daffa_menu">
-		<a href="#daffa_about">tentang</a>
-		<a href="#daffa_skill">skill</a>
-		<a href="#daffa_proyek">proyek</a>
-		<a href="#daffa_kontak">kontak</a>
-	</div>
-</div>
-
-<header id="daffa_hero">
-	<div>
-		<span class="daffa_tag">halo, saya →</span>
-		<h1>Daffa<br>Fauzan<br><em>Nugraha</em></h1>
-		<p class="daffa_kalimat">mahasiswa informatika yang lagi <b id="daffa_kata">belajar web</b>.</p>
-		<p class="daffa_jam" id="daffa_jam"></p>
-	</div>
-	<div class="daffa_hero_kanan">
-		<div class="daffa_pigura"></div>
-		<div class="daffa_stiker" id="daffa_stiker">klik<br>aku</div>
-	</div>
+<!-- navbar -->
+<header id="daffa_header">
+  <div class="daffa_container daffa_navbar">
+    <a href="#daffa_home" class="daffa_brand"><span class="daffa_kode">&lt;/&gt;</span> Daffa Portfolio</a>
+    <nav id="daffa_menu">
+      <a href="#daffa_home" class="daffa_aktif">Home</a>
+      <a href="#daffa_about">About</a>
+      <a href="#daffa_skills">Skills</a>
+      <a href="#daffa_projects">Projects</a>
+    </nav>
+  </div>
 </header>
 
-<section id="daffa_about" class="daffa_bagian">
-	<h2><span>01/</span>Tentang</h2>
-  <div id="daffa_about_isi">
-    <div>
-		<p>Saya mahasiswa Teknik Informatika di Universitas Perjuangan Tasikmalaya. Lagi fokus belajar bikin website dari HTML, CSS sampe JavaScript, dan mulai penasaran sama AI.</p>
-		<p>Di luar kuliah saya suka main game dan nulis cerita fantasi. Buat saya ngoding itu mirip nulis cerita: bikin dunia sendiri, cuma aturannya lebih ketat.</p>
-		<p>Website ini dibikin tanpa template, ditulis sendiri dari nol (sambil sering buka dokumentasi).</p>
+<!-- hero -->
+<section id="daffa_home">
+  <div class="daffa_container daffa_hero">
+    <div class="daffa_hero_teks">
+      <p class="daffa_hello">Hello, I'm</p>
+      <h1>Daffa Fauzan<br><span>Nugraha</span></h1>
+      <p class="daffa_role">Student | Web Developer | Informatics Enthusiast</p>
+      <p class="daffa_welcome">Selamat datang di portofolio saya. Saya mahasiswa Teknik Informatika yang suka belajar teknologi, bikin website, dan mencari solusi lewat kode.</p>
+      <div class="daffa_tombol_wrap">
+        <a href="#daffa_about" class="daffa_btn daffa_btn_biru">About Me</a>
+        <a href="#daffa_kontak" class="daffa_btn daffa_btn_garis">✉ Contact Me</a>
+      </div>
     </div>
 
-	<div class="daffa_ktm">
-		<h3>KARTU MAHASISWA (versi iseng)</h3>
-		<dl>
-			<dt>nama</dt><dd>Daffa Fauzan Nugraha</dd>
-			<dt>nim</dt><dd>2503010041</dd>
-			<dt>prodi</dt><dd>Teknik Informatika</dd>
-			<dt>kampus</dt><dd>Universitas Perjuangan Tasikmalaya</dd>
-			<dt>domisili</dt><dd>Tasikmalaya</dd>
-		</dl>
-	</div>
+    <div class="daffa_hero_gambar">
+      <!-- gambar laptop dibikin pake svg biasa -->
+      <svg viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustrasi laptop">
+        <g transform="rotate(-5 230 170)">
+          <rect x="80" y="50" width="290" height="180" rx="12" fill="#0b2a27"/>
+          <rect x="92" y="62" width="266" height="156" rx="6" fill="#0f766e"/>
+          <text x="225" y="160" text-anchor="middle" font-size="62" font-weight="700" fill="#ffffff" font-family="monospace">&lt;/&gt;</text>
+          <path d="M60 236 H390 L412 260 H38 Z" fill="#d3e4e0"/>
+          <rect x="170" y="239" width="110" height="6" rx="3" fill="#a8c7c1"/>
+        </g>
+        <!-- tanaman -->
+        <ellipse cx="418" cy="238" rx="11" ry="36" fill="#3fae7a" transform="rotate(-22 418 238)"/>
+        <ellipse cx="440" cy="244" rx="11" ry="32" fill="#2e9a68" transform="rotate(18 440 244)"/>
+        <ellipse cx="429" cy="226" rx="10" ry="34" fill="#55c28f"/>
+        <path d="M405 272 H455 L448 326 H412 Z" fill="#fff7e6" stroke="#d3e4e0" stroke-width="3"/>
+      </svg>
+    </div>
   </div>
 </section>
 
-<section id="daffa_skill" class="daffa_bagian">
-	<h2><span>02/</span>Skill</h2>
-	<div class="daffa_kolom3">
-		<div class="daffa_kotak">
-			<h3>udah bisa</h3>
-			<ul>
-				<li>[x] HTML</li>
-				<li>[x] CSS</li>
-				<li>[x] JavaScript dasar</li>
-				<li>[x] Python dasar</li>
-			</ul>
-		</div>
-		<div class="daffa_kotak">
-			<h3>lagi belajar</h3>
-			<ul>
-				<li>[~] Responsive layout</li>
-				<li>[~] Git &amp; GitHub</li>
-				<li>[~] MySQL</li>
-				<li>[~] Algoritma pencarian AI</li>
-			</ul>
-		</div>
-		<div class="daffa_kotak">
-			<h3>pengen coba</h3>
-			<ul>
-				<li>[ ] Laravel</li>
-				<li>[ ] React</li>
-				<li>[ ] Bikin game sendiri</li>
-				<li>[ ] Power BI</li>
-			</ul>
-		</div>
-	</div>
-</section>
-
-<section id="daffa_proyek" class="daffa_bagian">
-	<h2><span>03/</span>Proyek</h2>
-	<ol class="daffa_daftarproj">
-		<li><a href="#">
-			<span>01</span>
-			<span class="daffa_nama_proj">Warkop Sore</span>
-			<small>website 7 halaman, menu interaktif + form kontak</small>
-			<small>2026 ↗</small>
-		</a></li>
-		<li><a href="#">
-			<span>02</span>
-			<span class="daffa_nama_proj">Portofolio ini</span>
-			<small>HTML, CSS, JS tanpa template</small>
-			<small>2026 ↗</small>
-		</a></li>
-		<li><a href="#">
-			<span>03</span>
-			<span class="daffa_nama_proj">Metode Pencarian AI</span>
-			<small>tugas kuliah, bahas algoritma pencarian</small>
-			<small>2026 ↗</small>
-		</a></li>
-		<li><a href="https://daffa-so.freehosting.dev/2026/11/17/tugas-1-penjadwalan-disk/" target="_blank">
-			<span>04</span>
-			<span class="daffa_nama_proj">Penjadwalan Disk</span>
-			<small>tugas 1, ditulis di WordPress</small>
-			<small>2026 ↗</small>
-		</a></li>
-		<li><a href="https://daffa-so.freehosting.dev/2026/11/17/tugas-2-penjadwalan-cpu/" target="_blank">
-			<span>05</span>
-			<span class="daffa_nama_proj">Penjadwalan CPU</span>
-			<small>tugas 2, ditulis di WordPress</small>
-			<small>2026 ↗</small>
-		</a></li>
-	</ol>
-</section>
-
-<section id="daffa_kontak">
-  <div class="daffa_bagian">
-	<h2><span>04/</span>Ngobrol yuk</h2>
-	<p>Mau tanya, kerja bareng, atau sekadar nyapa:</p>
-	<a class="daffa_gede" href="mailto:daffafauzan1826@gmail.com">daffafauzan1826@gmail.com</a>
-	<a class="daffa_gede" href="https://wa.me/6285182780068" target="_blank">0851-8278-0068</a>
-	<p class="daffa_kecil" style="margin-top:14px">
-		<a href="https://github.com/" target="_blank">github</a>
-		<a href="https://instagram.com/" target="_blank">instagram</a>
-	</p>
+<!-- about -->
+<section id="daffa_about" class="daffa_section">
+  <div class="daffa_container">
+    <h2 class="daffa_judul">About Me</h2>
+    <div class="daffa_about_grid">
+      <div>
+        <p>Saya mahasiswa Teknik Informatika di Universitas Perjuangan Tasikmalaya. Saya tertarik di pengembangan web dan teknologi informasi, dan lagi rajin belajar HTML, CSS, JavaScript sampai dasar-dasar AI.</p>
+        <p style="margin-top:10px">Di luar kuliah saya suka main game dan nulis cerita fantasi. Buat saya ngoding itu mirip nulis cerita: sama-sama bikin dunia sendiri.</p>
+        <div class="daffa_info">
+          <a href="https://www.google.com/maps/search/?api=1&query=Tasikmalaya,+Indonesia" target="_blank" rel="noopener">📍 Tasikmalaya, Indonesia</a>
+          <span>✉ daffafauzan1826@gmail.com</span>
+          <span>🎓 S1 Teknik Informatika</span>
+        </div>
+      </div>
+      <div class="daffa_foto_wrap">
+        <img src="foto/profil.jpg" alt="Foto Daffa Fauzan Nugraha">
+      </div>
+    </div>
   </div>
 </section>
 
-<footer>© 2026 Daffa Fauzan Nugraha. Dibuat pake kopi dan HTML.</footer>
+<!-- skills -->
+<section id="daffa_skills" class="daffa_section">
+  <div class="daffa_container">
+    <h2 class="daffa_judul">Skills</h2>
+    <div class="daffa_skill_grid">
+      <div class="daffa_skill"><span class="daffa_ikon" style="background:#e44d26">H5</span>HTML5</div>
+      <div class="daffa_skill"><span class="daffa_ikon" style="background:#1572b6">C3</span>CSS3</div>
+      <div class="daffa_skill"><span class="daffa_ikon" style="background:#f7df1e;color:#222">JS</span>JavaScript</div>
+      <div class="daffa_skill"><span class="daffa_ikon" style="background:#3776ab">Py</span>Python</div>
+      <div class="daffa_skill"><span class="daffa_ikon" style="background:#00758f">My</span>MySQL</div>
+
+      <div class="daffa_skill"><span class="daffa_ikon" style="background:#f05032">Gt</span>Git</div>
+      <div class="daffa_skill"><span class="daffa_ikon" style="background:#24292f">GH</span>GitHub</div>
+      <div class="daffa_skill"><span class="daffa_ikon" style="background:#21759b">WP</span>WordPress</div>
+      <div class="daffa_skill"><span class="daffa_ikon" style="background:#0078d4">VS</span>VS Code</div>
+      <div class="daffa_skill"><span class="daffa_ikon" style="background:#7c4dff">AI</span>Dasar AI</div>
+    </div>
+  </div>
+</section>
+
+<!-- projects -->
+<section id="daffa_projects" class="daffa_section">
+  <div class="daffa_container">
+    <h2 class="daffa_judul">My Projects</h2>
+    <div class="daffa_proj_grid">
+
+      <a class="daffa_card" href="https://daffafauzann.github.io/warkopsore-daffa/" target="_blank">
+        <div class="daffa_card_img" style="background-image:url('foto/proj1.jpg'), linear-gradient(135deg,#8a5a3c,#d9a066)"><span>☕</span></div>
+        <div class="daffa_card_isi">
+          <h3>Warkop Sore</h3>
+          <p>Website warkop 7 halaman dengan menu interaktif dan form kontak.</p>
+          <span class="daffa_view">View Project →</span>
+        </div>
+      </a>
+
+      <a class="daffa_card" href="https://daffafauzann.github.io/" target="_blank">
+        <div class="daffa_card_img" style="background-image:url('foto/proj2.jpg'), linear-gradient(135deg,#0f766e,#5eead4)"><span>👤</span></div>
+        <div class="daffa_card_isi">
+          <h3>Portfolio Website</h3>
+          <p>Website portofolio pribadi yang ditulis pakai HTML, CSS, dan JavaScript.</p>
+          <span class="daffa_view">View Project →</span>
+        </div>
+      </a>
+
+      <a class="daffa_card" href="https://daffa-so.freehosting.dev/2026/11/17/tugas-1-penjadwalan-disk/" target="_blank">
+        <div class="daffa_card_img" style="background-image:url('foto/proj3.jpg'), linear-gradient(135deg,#2e7d6b,#8fd6b8)"><span>💽</span></div>
+        <div class="daffa_card_isi">
+          <h3>Penjadwalan Disk</h3>
+          <p>Tugas 1 tentang algoritma penjadwalan disk, dipublikasikan di WordPress.</p>
+          <span class="daffa_view">View Project →</span>
+        </div>
+      </a>
+
+      <a class="daffa_card" href="https://daffa-so.freehosting.dev/2026/11/17/tugas-2-penjadwalan-cpu/" target="_blank">
+        <div class="daffa_card_img" style="background-image:url('foto/proj4.jpg'), linear-gradient(135deg,#6a4cc4,#b9a4f5)"><span>🖥️</span></div>
+        <div class="daffa_card_isi">
+          <h3>Penjadwalan CPU</h3>
+          <p>Tugas 2 tentang algoritma penjadwalan CPU, dipublikasikan di WordPress.</p>
+          <span class="daffa_view">View Project →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- footer / kontak -->
+<footer id="daffa_kontak">
+  <div class="daffa_container daffa_footer_isi">
+    <div class="daffa_footer_brand">
+      <strong>Daffa Portfolio</strong>
+      <small>Build, Learn, and Share Knowledge</small>
+    </div>
+    <a href="mailto:daffafauzan1826@gmail.com">✉ daffafauzan1826@gmail.com</a>
+    <a href="https://wa.me/6285182780068" target="_blank">📞 0851-8278-0068</a>
+    <a href="https://www.google.com/maps/search/?api=1&query=Tasikmalaya,+Indonesia" target="_blank" rel="noopener">📍 Tasikmalaya, Indonesia</a>
+  </div>
+  <div class="daffa_copy">© 2026 Daffa Portfolio. All rights reserved.</div>
+</footer>
 
 <script src="script.js"></script>
 </body>
